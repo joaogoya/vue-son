@@ -4,7 +4,7 @@
 
 	= Sobre:
 	=========
-		Sempre que faço um curso online, eu tomo nota daquilo que está sendo ensinado.
+		Sempre que faço um curso, eu tomo nota daquilo que está sendo ensinado.
 		Criei este repositório git para subir os meus arquivos de testes.
 		Arquivos que fui criando enquanto aprendia Vue.js
 		Este repo, portanto, não se trata de um proj, e sim um lab.
@@ -35,6 +35,27 @@
 	=====================
 		▬ Instalar o node
 		▬  Vue cli: https://github.com/vuejs/vue-cli
+		▬ Pra instalar o vue cli:
+			• npm install -g @vue/cli
+			• esse cara nao inicializa nenhum projeto, ele instala o vue globalmente na maquina
+				- da pra criar uma aplicação my basica, puxando o vue de algum cdn
+				- mas tb da p trabalhar em conjunto com webpack, ou browsefy. Existem varios templates.
+		▬ Pra criar um projeto é o seguinte:
+			• vue init nomeDoTemplate nomeDoProjeto
+			• Este link mostra a lista de templates oficiais que o vue tem - https://github.com/vuejs-templates?utf8=%E2%9C%93&q=&type=&language=
+				- browserify - mais complexo
+				- briwserify-simple
+				- simple
+				- webpack 
+				- webpack-simple
+			
+			**Para fazer éste curso, é pré-requisito o webpack
+				vou ir atras de alguma coisa em web pack.
+				Quando esiver ok com webpack, volto p vue
+				
+		
+				
+			
 		
 		
 		
