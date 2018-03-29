@@ -73,8 +73,32 @@
 			- webpack.config.js: Configurações do webpack
 				
 			
-			
-			
+	= Aula 04: binding:
+	====================
+		▬ O index html criado na aula passada tem o apontamento para o bundle
+		▬ Ele cria tb o elemento html que vai iniciar a nossa aplicação
+			• <div id="app"></div>
+		▬ Na pasta src nos vamos começar a programar:
+			• O instrutor diz q não que trabalhar com arquivos .vue. Então ele deleta.
+			• a pasta assets fica
+			• o js que inicia a aplicação e o main.js
+				- nesse arquivo ele tira o import do app.vue e tira o render
+				- ficou apenas o que é relativo ao vue.
+					• ficou a linha do import la em cima e uma instancia vue
+					• essa instancia é recebe alguns atributos, um deles é o entry point: el:#app - é o elemento html da index
+		▬ Isso, assim como está, já é uma aplicação vue.
+		▬ Pra saber se está funcionando é o seguinte:
+			• Com o webpack da pra executa a aplicação, com o server ja embutido, o dev serv. Ele já está configurado.
+			• Se olharmos o packge.jason, na tag scripts podemos ver que tem dois ambientes:
+				- dev: roda a aplicação
+				- build: pra dar o build antes de subir
+				- o ambiente dev ja tem um live reload
+		▬ Pra rodar via terminal: npm run dev
+		▬ Com a aplicação rodando ele começa a trabalhar o databinding
+		▬ na instancia do vue ele cria mais um atributo, o data
+		▬ esse atributo recebe um objeto. Ele coloca um tilu: 'qq coisa'
+		▬ no index.html, dentro da tag app ele faz uma interpolação que nem no angular. Da pra colocar o titulo onde quiser.
+		
 			
 			
 			
