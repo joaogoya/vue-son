@@ -9,6 +9,7 @@
 		Arquivos que fui criando enquanto aprendia Vue.js
 		Este repo, portanto, não se trata de um proj, e sim um lab.
 		Minhas experiências, tentativas e primeiras impressões com vue.js
+		link do curso: https://www.schoolofnet.com/curso-vuejs-20/2081
 
 	= Aula 01: Introdução:
 	=======================
@@ -49,10 +50,6 @@
 				- webpack 
 				- webpack-simple
 			
-			**Para fazer éste curso, é pré-requisito o webpack
-				vou ir atras de alguma coisa em web pack.
-				Quando esiver ok com webpack, volto p vue
-				
 		
 				
 			
