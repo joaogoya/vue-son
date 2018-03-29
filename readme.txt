@@ -39,7 +39,7 @@
 		▬ Pra instalar o vue cli:
 			• npm install -g @vue/cli
 			• esse cara nao inicializa nenhum projeto, ele instala o vue globalmente na maquina
-				- da pra criar uma aplicação my basica, puxando o vue de algum cdn
+				- da pra criar uma aplicação mt basica, puxando o vue de algum cdn
 				- mas tb da p trabalhar em conjunto com webpack, ou browsefy. Existem varios templates.
 		▬ Pra criar um projeto é o seguinte:
 			• vue init nomeDoTemplate nomeDoProjeto
@@ -49,7 +49,13 @@
 				- simple
 				- webpack 
 				- webpack-simple
-			
+			• no final da uala é criado, apenas p ilustrar, um proj com o template simple	
+				- vue init simple proj-vueSimple
+				- o vue simple nao tem package.jason, por isso não é necessario responder as perguntas do vue cli
+				- se abrirmos o index.html que foi criado, vamos verificar o seguinte:
+					o vue simple ja coloca o link paro vue.js pra pegar online. Tipo um cdn
+					o logo ele tb pega online tb
+				
 		
 				
 			
