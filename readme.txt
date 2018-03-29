@@ -32,8 +32,8 @@
 			• um dos conceitos q o vue aplica é o DRY: dont repeat yourself - codigos reutilizaveis
 			
 			
-	= Aula 01 - Vue CLI:
-	=====================
+	= Aula 02: Vue CLI:
+	====================
 		▬ Instalar o node
 		▬  Vue cli: https://github.com/vuejs/vue-cli
 		▬ Pra instalar o vue cli:
@@ -55,7 +55,38 @@
 				- se abrirmos o index.html que foi criado, vamos verificar o seguinte:
 					o vue simple ja coloca o link paro vue.js pra pegar online. Tipo um cdn
 					o logo ele tb pega online tb
+	
+	
+	= Aula 03: Criando projeto com webpack-simple:
+	===============================================
+		▬ vue init empacotador nomeProj
+		▬ vue init webpack-simple proj01
+		▬ npm install - pra baixar as dependencias
+		▬ Dai ele explica o que foi instalado
+			- node modules: as dependencias normais de qq projeto
+			- pasta src: É a pasta que vai ser utilizada p desenvolver
+			- babel: Faz a compilação da EC6 pra EC5
+			- git ignore: auto explicativo
+			- index.htmol: é o arquivo que inicia a aplicação. Tudo começa aqui.
+			- package.json: auto explicativo
+			- readme: idem
+			- webpack.config.js: Configurações do webpack
+			
 				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+	
 		
 				
 			
