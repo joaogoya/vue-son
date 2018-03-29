@@ -54,7 +54,7 @@
 				- o vue simple nao tem package.jason, por isso não é necessario responder as perguntas do vue cli
 				- se abrirmos o index.html que foi criado, vamos verificar o seguinte:
 					o vue simple ja coloca o link paro vue.js pra pegar online. Tipo um cdn
-					o logo ele tb pega online tb
+					o logo ele tb pega online tb 
 				
 		
 				
