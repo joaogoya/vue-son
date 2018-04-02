@@ -1,16 +1,10 @@
-import Vue from 'vue'
-
+import Vue from 'vue';
+import { Time } from './time';
 new Vue({
   el: '#app',
   data: {
-    titulo: 'APP VUE JS',
-    numeroInteiro:20,
-    nomeroFlutua: 15.18,
-    infoBool: true,
-    algumObjQq: {
-      nome: "Nome qq",
-      email: "Lorem",
+      time: new Time("gremio", "img_src")
     },
     linkTeste: "https://github.com/joaogoya/vuejs",
   }
-})
+)

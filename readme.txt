@@ -113,8 +113,17 @@
 			
 			
 			
+	= Aula 06: Classe  Time:
+	=========================
+		▬ inicio do projeto - tabela campeonato brasileiro
+		▬ vai no src e cria um arquivo time.js
+		▬ da um class time{
 			
-			
+		}
+		▬ Depois ele cria um construtor p receber o nome e o escudo.
+		▬ seta outros atributos
+		▬ pra usar a classe tem q exportar - export class time(){}
+		
 			
 			
 			
