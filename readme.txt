@@ -100,7 +100,16 @@
 		▬ no index.html, dentro da tag app ele faz uma interpolação que nem no angular. Da pra colocar o titulo onde quiser.
 		
 			
-			
+	= Aula 5: PropertyBinding:
+	===========================
+		▬ Ele cria varios elemntso no objeto data p mostrar que da pra criar, ints, floats, strings e objetos p mandar pro html
+		▬ Mostra que setar o valor de uma propriedade html via interpolação foi depreciado.
+		▬ agora, no vue 2, pra alterar o valor das propriedades html é o seguinte:
+			• id="{{ variavelJs }}" - modo depreciado
+			• v-bind:id="variavelJs" - modo aceito no vue 2
+			• na real entao é v-bind:propriedadeHtml="variavelJs"
+		▬ Escrever v-bind:propriedade é mt extenço e demorado. Pode ser abreviado para ":". Sim, apenas dois pontos
+			:propriedade="variavelJs" - :id="variavelJs"		
 			
 			
 			
