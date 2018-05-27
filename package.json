@@ -1,0 +1,26 @@
+{
+  "name": "vuejs",
+  "version": "1.0.0",
+  "description": "====================== ..::!! VUE JS !!::.. ======================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaogoya/vuejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaogoya/vuejs/issues"
+  },
+  "homepage": "https://github.com/joaogoya/vuejs#readme",
+  "devDependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1"
+  }
+}

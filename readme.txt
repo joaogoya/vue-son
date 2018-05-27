@@ -123,11 +123,76 @@
 		▬ Depois ele cria um construtor p receber o nome e o escudo.
 		▬ seta outros atributos
 		▬ pra usar a classe tem q exportar - export class time(){}
+		▬ depois disso, vai no main.js e importa a classe time
+		▬ No arquivo main.js, ali no data{}, apaga tudo o que tem alidentro e coloca um:
+			time: new Time("gremio", "img_src")
+			fica assim: 
+			data: {
+				time: new Time("gremio", "img_src")
+				},
+				linkTeste: "https://github.com/joaogoya/vuejs",
+			}
+		▬ com o ob time setado da ppra fazer bibdings no index
 		
 			
+	= Aula 07: img src:
+	====================
+		<img src=""
+		o webpack tem um fileloader	que faz o meio de campo
+		se ligar que o escudo é um atributo na classe time
+		no mai.js passamos ele por parametro
+		no index.html aemos um ropertybinding p mostrar o atributo escudo
+
 			
-			
-	
+	= Aula 08: v-for:
+	==================
+		faz um array de times no ain.js
+		tims: [
+			new time (atributo, atributo),
+			new time (atributo, atributo),
+			new time (atributo, atributo),
+			new time (atributo, atributo),
+		]
+
+		da p percorrer objetos tb
+		
+		
+	= Aula 08: bootstrap:
+	======================
+	npm install bootstrap --save jquery --save popper.js --save url-loader --save-dev style-loader --save-dev
+	npm install jquery --save
+	npm install popper.js --save
+	npm install url-loader --save-dev
+	npm install style-loader --save-dev
+
+	depois de instalar tudo, tem que fazeer algumas cnoiguraões no webpack.config.js
+	esse ffile fica na build
+		em:
+			modules
+				rules
+					vamos adicionar a dos bootstrap
+					 {
+						test: /\.(woff|wwoff2|ttf|svg|eot)$/,
+						loader: 'url-loader'
+					}
+		depois disso, no main.js, faz os require
+		reqquire('style-!css!bootstrap/dist/css/bootstrap.min.css');
+			esse linha tem as seguintes peculiaridades:
+				bootstrap/dist/css/bootstrap.min.css - src do arquivo que estamos imortando
+
+				style-!css!
+					style loader ue instaamos qd instalamos o bootstrap
+
+		depois do css tem q trazer o s do bootstrap tb
+		require('bootstrap'),
+
+		no meu nao funcionou assim. Provavelmente versionamento de webpack
+		meu main.js ficou assim:
+			import 'bootstrap/dist/css/bootstrap.css';
+			import 'bootstrap';
+
+
+
 		
 				
 			

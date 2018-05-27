@@ -1,23 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>proj01</title>
-  </head>
-  <body>
-    <div id="app">
-      <h1>property binding</h1>
-      <!-- <h2> {{ titulo }} </h2>
+
+<head>
+  <meta charset="utf-8">
+  <title>proj01</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>property binding</h1>
+    <!-- <h2> {{ titulo }} </h2>
       <a v-bind:href="linkTeste">Lorem do link teste</a>
       <p :class="algumObjQq.nome">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed egestas ligula eu quam dictum finibus. Duis sit amet iaculis augue. Nam scelerisque feugiat vehicula. Suspendisse pretium augue ut tellus tincidunt, vitae fermentum tellus commodo. Nulla rutrum ex a ante sagittis mattis. Aliquam porttitor tellus et justo vehicula, quis ullamcorper nisi finibus. Donec fringilla nibh in ex ultrices, eget varius urna consequat. Etiam facilisis mauris vitae velit pellentesque, a dignissim dolor efficitur. Duis euismod ligula ut semper tristique. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus ac ipsum augue. Duis at pretium libero.
       </p> -->
 
-      <hr>
-      <h1>classe time</h1>
-      <h2> {{ time }} </h2>
+    <hr>
+    <h1>classe time</h1>
+    <h2> Nome: {{ time.nome }} </h2>
+    <img :src="time.escudo" />
 
+    <hr>
+    <!--ul>
+      <li v-for="time in times">
+        <h2> Nome: {{ time.nome }} </h2>
+        <img :src="time.escudo" />
+      </li>
+    </ul>
+
+    <hr>
+    <ul>
+      <li v-for="(time, i) in times">
+        <h2>{{ i }} -  Nome: {{ time.nome }} </h2>
+        <img :src="time.escudo" />
+      </li>
+    </ul-->
+
+    <hr> vfor ainda
+    <br> da p percorrer objetos
+
+    <ul>
+      <li v-for="(valor, atributo, index) in timeff">
+        <h3>{{ index }} - {{ atributo }}: {{ valor }} </h3>
+      </li>
+    </ul>
+
+    <hr>
+    <h1>teste bootsrtap</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2" style="background-color: blue;">aaaaaaaa</div>
+        <div class="col-md-10" style="background-color: red;">ddddddddddd</div>
+      </div>
     </div>
-    <script src="/dist/build.js"></script>
-  </body>
+
+  </div>
+  <script src="/dist/build.js"></script>
+</body>
+
 </html>
