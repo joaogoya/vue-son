@@ -157,7 +157,7 @@
 		da p percorrer objetos tb
 		
 		
-	= Aula 08: bootstrap:
+	= Aula 09: bootstrap:
 	======================
 	npm install bootstrap --save jquery --save popper.js --save url-loader --save-dev style-loader --save-dev
 	npm install jquery --save
@@ -192,14 +192,83 @@
 			import 'bootstrap';
 
 
+	= Aula 10: listar os times:
+	============================
+		colocar os times num array e exxibir com o bootstrap
 
+	
+	= Aula 11: form q recebe o resultado do jogo:
+	==============================================
+		faz um form
+		fa um obj com time de casa e time de fora
+		fala dos ciclos de vida
+
+		um dos metodos do vue que trabalha em cima de ciclo de vida é o created
+
+
+	= Aula 12: dados or gtras do vue:
+	==================================
+		qd a gente cria instancias dentro no new vue, ele cria getters, setters no obj.
+			ela tem observadores,....
+		qd a gente coloca a intancia na mao fora do new vue ele nao cria nada, 
 		
-				
 			
-		
-		
-		
+	= Aula 12: one e two way databinding:
+	======================================	
+		one way é d mandamos inormação do js pro template, ou do template pro js.
+		one way vai de um para o outro e deu.
+
+		two way é qd promovemos alguma alteração e os dois se atualizam.
 
 
+		ou seja
+		one way:
+			qd promovemos alteração no template e só o js atualizam
+			qd promovemos alteração no js e só o template atualiza.
+
+		two way
+			promovemos mudança em qq um dos dois e os dois se atualizam.
+
+		mete um v-model no temlate
+		
+		
+	= Aula 13: Eventos:
+	====================
+		click, dulo clique, ....
+		v-on:evento="nomeFuncao()"
+		v-on:click="enviaForm()" - nao tem ponto e vvirgula no inal	
+
+		no js, no obj vue, cria uma nova instancia, a methods
+		tipo,
+		data{
+
+		},
+		liveciclehoock(){}
+		outrolfecicle(){}
+		methods{
+			// metodos dispparados or eventos aqui
+		}
+
+
+		no temlate, no onclock:
+			v-on:click="enviaForm()" - da pra passar parametros, inclusive o $event
+			v-on:click="enviaForm($event, parametro1, parametro2.algumAtributo, arametro3)"	
+
+		no js é só receber os parametros e trabalhar com eles
+		methods{
+			enviaForm($event, parametro1, parametro2.algumAtributo, parametro3){
+				console.log($event);
+				parametro1 = (parametro2.algumAtributo *parametro3) - $event.AlgumaCoisa;
+			}
+		}
+
+		no template da p trocar o v-on:evento="" por @evento=""
+		fica melhor de trabalhar.
+		entao teriamos:
+			@click="enviaForm($event, parametro1, parametro2.algumAtributo, arametro3)"	
+
+		converter string p inteiro:
+			se this.AlgumaCoisa é uma string poe um + na frnte q ele converte p inteiro
+			+this.AlgumaCoisa vira um int
 		
 // alt + 22 - alt + 7 \\
