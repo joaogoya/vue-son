@@ -1,7 +1,6 @@
 import Vue from 'vue';
-import {
-  Time
-} from './time';
+import { Time } from './time';
+import _ from 'lodash';
 
 // require('style-loader!css-loader!bootstrap/dist/css/bootstrap.min.css');
 // require('bootstrap');
@@ -12,6 +11,12 @@ import 'bootstrap';
 new Vue({
   el: '#app',
   data: {
+
+    order: {
+			keys: ['pontos', 'gm', 'gs'],
+			sort: ['desc', 'desc', 'asc']
+		},
+
     time: new Time("gremio", require('./assets/america_mg_60x60.png')),
     times: [
       new Time('Palmeiras', require('./assets/palmeiras_60x60.png')),
@@ -66,6 +71,11 @@ new Vue({
       this.novoJogo.casa.time.fimJogo(timeAdversario, gols, golsAdversario);
     } 
   },
+  filters: {
+    saldo(time){
+        return time.gm - time.gs;
+    }
+},
 
   linkTeste: "https://github.com/joaogoya/vuejs",
 })

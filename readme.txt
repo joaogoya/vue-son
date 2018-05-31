@@ -270,5 +270,66 @@
 		converter string p inteiro:
 			se this.AlgumaCoisa é uma string poe um + na frnte q ele converte p inteiro
 			+this.AlgumaCoisa vira um int
+
+
+	= Aula 14: filtros e ordenação das colunas:
+	============================================
+	coluna saldo de gols
+		Interpolação no template
+		{{ time.mg - time.gs }}
+
+		filters no vue é mais um atributo do new vue
+		data{
+
+		},
+		lifeCicleHoos(){
+
+		},
+		metods{
+
+		},
+		filters{
+			// aqui dentro declara uma função normal, como nos metodos.
+			// qq funão qq implemente qqq logica
+			// nesse caso vai ficar a que calcula o saldo de gols, recebendo o time
+
+			saldo(time){
+				return time.gm - tinme.gs
+			}
+		}
+
+		deois de criado o filtro, no template fffaz uma interpolação passando o obj, um pipe e o filtro
+		{{ time | saldo }}
+
+		nao queremos todos os atributos do time. Só o saldo.
+		Filtrmos o obj ortanto pra pegarmos só o qq queremos.
+
+		sobre ordenação, nessa aula ele nao ordena,ele só cria um array com o nme das colunas
+
+
+	= Aula 15: renderizzaão condicional e eventos:
+	===============================================
+		v-if pra mostrar a tabea ou o form
+		igual ao angular, só que tem v-else
+
+	= Aula 15: ordenando a tabela doc amppeonato:
+	==============================================
+	dentro do data cria um tribito com dois arrays
+		order: {
+			keys: ['pontos', 'gm', 'gs'],
+			sort: ['desc', 'desc', 'asc']
+		},
+
+	instaa o lodash
+		npm install lodash --save
+		no main tem q importar
+		impport _ from 'lodash'
+
+	no template, no th coloca um link p disarar o evento de ordenação
+
+	<a @click="sortBy"
+
+
+
 		
 // alt + 22 - alt + 7 \\
