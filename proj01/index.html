@@ -57,25 +57,29 @@
           <input type="text" class="form-control" v-model="novoJogo.fora.gols">
         </div>
         <button type="button" class="btn btn-primary" @click="fimJogo">Fim de jogo</button>
+        <button type="button" class="btn btn-primary" @click="ccnovoJogo">Novo jogo</button>
       </form>
     </div>
     <br>
+    <div class="row">
+        <div class="form-group">
+            <input type="text" class="form-control" v-model="filter">
+          </div>
+    </div>
     <br>
     <div class="row">
       <div class="col-md-12">
         <table class="table table-striped">
           <thead>
             <tr>
-              <th>Escudo</th>
-              <th>Nome</th>
-              <th>Pontos</th>
-              <th>GM</th>
-              <th>GS</th>
-              <th>Saldo de gols</th>
+                <tr>
+                    <th v-for="coluna in colunas">
+                        <a href="#" @click.prevent="sortBy(coluna)">{{coluna}}</a>
+                    </th>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="time in times">
+            <tr v-for="time in timesFiltered">
               <td>
                 <img class="img-thumbnail" :src="time.escudo" /> </td>
               <td> {{ time.nome }} </td>

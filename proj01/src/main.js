@@ -11,11 +11,12 @@ import 'bootstrap';
 new Vue({
   el: '#app',
   data: {
-
     order: {
-			keys: ['pontos', 'gm', 'gs'],
-			sort: ['desc', 'desc', 'asc']
-		},
+      keys: ['pontos', 'gm', 'gs'],
+      sort: ['desc', 'desc', 'asc']
+  },
+  filter: '',  
+  colunas: [ 'escudo', 'nome', 'pontos', 'gm', 'gs', 'saldo'],
 
     time: new Time("gremio", require('./assets/america_mg_60x60.png')),
     times: [
@@ -54,13 +55,7 @@ new Vue({
   },
 
   created() {
-    let indexCasa = Math.floor(Math.random() * 20),
-      indexFora = Math.floor(Math.random() * 20);
-
-    this.novoJogo.casa.time = this.times[indexCasa];
-    this.novoJogo.casa.gols = 0;
-    this.novoJogo.fora.time = this.times[indexFora];
-    this.novoJogo.fora.gols = 0;
+    this.ccnovoJogo();
   },
 
   methods: {
@@ -69,13 +64,36 @@ new Vue({
       let gols = +this.novoJogo.casa.gols;
       let golsAdversario = +this.novoJogo.fora.gols;
       this.novoJogo.casa.time.fimJogo(timeAdversario, gols, golsAdversario);
-    } 
+    },
+
+    sortBy(coluna){
+      this.order.keys = coluna;
+      this.order.sort = this.order.sort == 'desc' ? 'asc': 'desc';
+    },
+
+    ccnovoJogo(){
+      let indexCasa = Math.floor(Math.random() * 20),
+      indexFora = Math.floor(Math.random() * 20);
+
+      this.novoJogo.casa.time = this.times[indexCasa];
+      this.novoJogo.casa.gols = 0;
+      this.novoJogo.fora.time = this.times[indexFora];
+      this.novoJogo.fora.gols = 0;
+    }
+  },
+  computed: {
+    timesFiltered(){
+        let colecao = _.orderBy(this.times, this.order.keys, this.order.sort);
+        
+        return _.filter(colecao, item => item.nome.indexOf(this.filter) >=0 );
+    }
   },
   filters: {
     saldo(time){
         return time.gm - time.gs;
     }
-},
+  },
+ 
 
   linkTeste: "https://github.com/joaogoya/vuejs",
 })
