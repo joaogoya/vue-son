@@ -18,7 +18,7 @@
   "homepage": "https://github.com/joaogoya/vuejs#readme",
   "devDependencies": {
     "bootstrap": "^4.1.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.14.3",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1"
